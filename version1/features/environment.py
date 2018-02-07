@@ -18,5 +18,6 @@ def _is_accessible(context, accepted_codes=None):
 
 
 def before_all(context):
+    """Perform setup before the first event."""
     context.is_accessible = _is_accessible
     context.api_url = "https://api.github.com"

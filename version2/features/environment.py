@@ -18,23 +18,24 @@ def _is_accessible(context, accepted_codes=None):
 
 
 def before_all(context):
+    """Perform setup before the first event."""
     context.is_accessible = _is_accessible
     context.api_url = "https://api.github.com"
 
 
 @capture
 def before_scenario(context, scenario):
-    """Perform the setup before each scenario is run."""
+    """Perform setup before each scenario is run."""
     pass
 
 
 @capture
 def after_scenario(context, scenario):
-    """Perform the cleanup after each scenario is run."""
+    """Perform cleanup after each scenario is run."""
     pass
 
 
 @capture
 def after_all(context):
-    """Perform the cleanup after the last event."""
+    """Perform cleanup after the last event."""
     pass
