@@ -10,10 +10,9 @@ def _is_accessible(context, accepted_codes=None):
     url = context.api_url
     try:
         res = requests.get(url)
-        if res.status_code in accepted_codes:
-            return True
-    except requests.exceptions.ConnectionError:
-        pass
+        return res.status_code in accepted_codes
+    except requests.exceptions.ConnectionError as e:
+        print("Connection error: {e}".format(e=e))
     return False
 
 
