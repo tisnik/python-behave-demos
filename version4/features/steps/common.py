@@ -7,7 +7,7 @@ import requests
 
 @given('GitHub is accessible')
 def initial_state(context):
-    context.is_accessible(context)
+    assert context.is_accessible(context)
 
 
 @given('System is running')
