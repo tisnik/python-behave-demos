@@ -11,7 +11,7 @@ Feature: Smoke test
     When I call native function add with arguments <x> and <y>
     Then I should get <result> as a result
 
-     Examples: users
+     Examples: results
      |x|y|result|
      # basic arithmetic
      |          0| 0|          0|

@@ -5,7 +5,7 @@ Feature: Adder test 2
     When I call function add with arguments <x> and <y>
     Then I should get <result> as a result
 
-     Examples: users
+     Examples: results
      |x|y|result|
      # basic arithmetic
      |          0| 0|          0|
