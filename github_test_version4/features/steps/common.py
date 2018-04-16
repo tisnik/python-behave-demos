@@ -54,3 +54,11 @@ def check_company(context, company):
     assert 'company' in context.data
     value = context.data.get('company', '')
     assert value == company, "{e} != {v}".format(e=company, v=value)
+
+
+@then('I should find that the user works for company ')
+def check_company_not_set(context):
+    assert context.data is not None
+    assert 'company' in context.data
+    value = context.data.get('company', '')
+    assert not value

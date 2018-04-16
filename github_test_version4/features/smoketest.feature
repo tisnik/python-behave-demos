@@ -26,6 +26,6 @@ Feature: Smoke test
      |nick|fullname|company|
      |torvalds|Linus Torvalds|Linux Foundation|
      |brammool|Bram Moolenaar|Zimbu Labs|
-     #|richhickey|Rich Hickey||
+     |richhickey|Rich Hickey||
      |tisnik|Pavel Tišnovský|Red Hat, Inc.|
 
